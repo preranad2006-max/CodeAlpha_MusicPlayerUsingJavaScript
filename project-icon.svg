@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Pulse Player icon</title>
+  <desc id="desc">A lime and cyan audio pulse inside a rounded midnight square.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1b2c38"/>
+      <stop offset="1" stop-color="#0d1118"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d7fa70"/>
+      <stop offset="1" stop-color="#93e7e3"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="122" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#93e7e3" stroke-opacity=".18" stroke-width="3"/>
+  <circle cx="256" cy="256" r="116" fill="none" stroke="#d7fa70" stroke-opacity=".1" stroke-width="2"/>
+  <path d="M154 286v-60M204 330V182M256 365V147M308 330V182M358 286v-60" fill="none" stroke="url(#pulse)" stroke-linecap="round" stroke-width="28"/>
+  <path d="M139 256h234" fill="none" stroke="#ecf3f2" stroke-opacity=".16" stroke-linecap="round" stroke-width="3"/>
+</svg>

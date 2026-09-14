@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d1118" />
+    <meta name="description" content="A focused, responsive music player for your listening sessions." />
+    <title>Pulse Player — Music for the moment</title>
+    <link rel="icon" href="images/project-icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Pulse Player home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>PULSE<span class="brand-muted">/PLAYER</span></span>
+      </a>
+      <div class="header-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>LOCAL SESSION</span>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Your personal sound space <span class="eyebrow-line"></span></p>
+          <h1 id="page-title">Music for the<br /><em>moment.</em></h1>
+        </div>
+        <p class="intro-note">Press play, settle in,<br class="desktop-break" /> and let the room change.</p>
+      </section>
+
+      <div class="player-layout">
+        <section class="player-card" aria-label="Music player">
+          <div class="player-topline">
+            <span class="section-label">NOW PLAYING</span>
+            <span class="track-counter" id="trackCounter">01 / 08</span>
+          </div>
+
+          <div class="artwork-wrap">
+            <div class="artwork-glow" aria-hidden="true"></div>
+            <div class="artwork-frame" id="artworkFrame">
+              <img id="albumArt" src="images/neon-drift.svg" alt="Neon Drift album artwork" />
+              <div class="artwork-overlay" aria-hidden="true">
+                <span class="artwork-tag">PULSE<br />ARCHIVE</span>
+                <span class="artwork-index">001</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="song-meta">
+            <p class="song-kicker" id="songKicker">PULSE ARCHIVE · 001</p>
+            <h2 id="songTitle">Neon Drift</h2>
+            <p id="songArtist">Astra Vale</p>
+          </div>
+
+          <div class="timeline">
+            <div class="time-row">
+              <span id="currentTime">0:00</span>
+              <span id="duration">0:00</span>
+            </div>
+            <label class="sr-only" for="progressBar">Song progress</label>
+            <input id="progressBar" class="range range-progress" type="range" min="0" max="100" value="0" step="0.1" />
+          </div>
+
+          <div class="controls-row">
+            <button class="icon-button" id="prevButton" type="button" aria-label="Previous song" title="Previous song">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M18 6.5 9 12l9 5.5V6.5Z" /></svg>
+            </button>
+            <button class="play-button" id="playButton" type="button" aria-label="Play" title="Play">
+              <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7V5Z" /></svg>
+              <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" /></svg>
+            </button>
+            <button class="icon-button" id="nextButton" type="button" aria-label="Next song" title="Next song">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M6 6.5l9 5.5-9 5.5V6.5Z" /></svg>
+            </button>
+          </div>
+
+          <div class="utility-row">
+            <span class="utility-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm13.5 2a4 4 0 0 1 0 2M16 7.5a7 7 0 0 1 0 9" /></svg><span>VOLUME</span></span>
+            <label class="sr-only" for="volumeBar">Volume</label>
+            <input id="volumeBar" class="range range-volume" type="range" min="0" max="1" value="0.78" step="0.01" />
+            <button class="autoplay-toggle is-on" id="autoplayToggle" type="button" aria-pressed="true">
+              <span class="toggle-dot"></span>
+              <span>AUTOPLAY</span>
+            </button>
+          </div>
+        </section>
+
+        <aside class="playlist-panel" aria-labelledby="playlist-title">
+          <div class="playlist-heading">
+            <div>
+              <p class="section-label">THE QUEUE</p>
+              <h2 id="playlist-title">Your playlist</h2>
+            </div>
+            <span class="playlist-length">08 TRACKS</span>
+          </div>
+
+          <div class="playlist" id="playlist" role="list"></div>
+
+          <div class="playlist-footer">
+            <span class="footer-mark" aria-hidden="true">✳</span>
+            <p>Eight carefully selected<br />frequencies for a clear head.</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span>HTML5 AUDIO PLAYER</span>
+      <span>DESIGNED FOR SLOW LISTENING <span class="footer-arrow">↗</span></span>
+    </footer>
+
+    <audio id="audioPlayer" preload="metadata"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
