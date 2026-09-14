@@ -4,8 +4,8 @@ const songs = [
     title: "Neon Drift",
     artist: "Astra Vale",
     album: "PULSE ARCHIVE · 001",
-    audio: "audio/neon-drift.wav",
-    artwork: "images/neon-drift.svg",
+    audio: "neon-drift.wav",
+    artwork: "neon-drift.svg",
     duration: "0:12",
     accent: "#92b366"
   },
@@ -13,8 +13,8 @@ const songs = [
     title: "Soft Focus",
     artist: "Mira Sol",
     album: "PULSE ARCHIVE · 002",
-    audio: "audio/soft-focus.wav",
-    artwork: "images/soft-focus.svg",
+    audio: "soft-focus.wav",
+    artwork: "soft-focus.svg",
     duration: "0:14",
     accent: "#b88772"
   },
@@ -22,8 +22,8 @@ const songs = [
     title: "Afterglow FM",
     artist: "North Arcade",
     album: "PULSE ARCHIVE · 003",
-    audio: "audio/afterglow-fm.wav",
-    artwork: "images/afterglow-fm.svg",
+    audio: "afterglow-fm.wav",
+    artwork: "afterglow-fm.svg",
     duration: "0:10",
     accent: "#5a8e9d"
   },
@@ -31,8 +31,8 @@ const songs = [
     title: "Daydream Loop",
     artist: "June Bloom",
     album: "PULSE ARCHIVE · 004",
-    audio: "audio/daydream-loop.wav",
-    artwork: "images/daydream-loop.svg",
+    audio: "daydream-loop.wav",
+    artwork: "daydream-loop.svg",
     duration: "0:13",
     accent: "#b08cc0"
   },
@@ -40,8 +40,8 @@ const songs = [
     title: "Orbital Rain",
     artist: "Kairo Bloom",
     album: "PULSE ARCHIVE · 005",
-    audio: "audio/orbital-rain.wav",
-    artwork: "images/orbital-rain.svg",
+    audio: "orbital-rain.wav",
+    artwork: "orbital-rain.svg",
     duration: "0:11",
     accent: "#5d9ab0"
   },
@@ -49,8 +49,8 @@ const songs = [
     title: "Amber Hours",
     artist: "Sora Field",
     album: "PULSE ARCHIVE · 006",
-    audio: "audio/amber-hours.wav",
-    artwork: "images/amber-hours.svg",
+    audio: "amber-hours.wav",
+    artwork: "amber-hours.svg",
     duration: "0:15",
     accent: "#b98252"
   },
@@ -58,8 +58,8 @@ const songs = [
     title: "Low Tide",
     artist: "Eli Meridian",
     album: "PULSE ARCHIVE · 007",
-    audio: "audio/low-tide.wav",
-    artwork: "images/low-tide.svg",
+    audio: "low-tide.wav",
+    artwork: "low-tide.svg",
     duration: "0:09",
     accent: "#548993"
   },
@@ -67,8 +67,8 @@ const songs = [
     title: "Electric Bloom",
     artist: "Nova Park",
     album: "PULSE ARCHIVE · 008",
-    audio: "audio/electric-bloom.wav",
-    artwork: "images/electric-bloom.svg",
+    audio: "electric-bloom.wav",
+    artwork: "electric-bloom.svg",
     duration: "0:16",
     accent: "#a46eaa"
   }
